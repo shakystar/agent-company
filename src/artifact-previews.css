@@ -1,0 +1,29 @@
+.artifact-previews { border: 1px solid var(--line); border-radius: 10px; margin: 24px 0; min-width: 0; background: var(--paper); }
+.artifact-previews > summary { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 18px 20px; cursor: pointer; font-size: 1rem; font-weight: 600; }
+.artifact-preview-body { display: grid; gap: 18px; padding: 0 20px 22px; min-width: 0; }
+.artifact-preview-body .inline-note { font-size: .875rem; line-height: 1.6; }
+.artifact-preview-body .field > span, .artifact-preview-body .button { font-size: .875rem; }
+.artifact-preview-body .field input, .artifact-preview-body .field select, .artifact-preview-body .field textarea { font-size: 1rem; }
+.preview-controls { display: flex; align-items: end; gap: 12px; flex-wrap: wrap; }
+.preview-controls .field { flex: 1 1 180px; min-width: 0; }
+.artifact-preview-viewer { display: grid; gap: 18px; min-width: 0; }
+.preview-provenance { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 18px; font-size: .875rem; }
+.preview-provenance .text-link { font-size: .875rem; margin-left: auto; }
+.preview-file-list { padding: 0; list-style: none; max-height: 240px; overflow: auto; }
+.preview-file-list li { display: flex; gap: 12px; flex-wrap: wrap; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: .875rem; }
+.preview-file-list li > span:first-child { flex: 1; overflow-wrap: anywhere; }
+.preview-file-list code { color: var(--muted); }
+.preview-frame-scroll { overflow: auto; max-width: 100%; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.preview-frame-scroll iframe { display: block; border: 0; height: 700px; background: #fff; }
+.preview-not-open { padding: 24px; border: 1px dashed var(--line); font-size: .875rem; line-height: 1.6; }
+.preview-feedback { border-top: 1px solid var(--line); padding-top: 20px; }
+.preview-feedback h3 { font-size: 1rem; }
+.preview-feedback .button { justify-self: start; }
+.artifact-preview-viewer > details > summary { cursor: pointer; font-size: .875rem; }
+@media (max-width: 680px) {
+  .artifact-preview-body { padding: 0 14px 18px; }
+  .artifact-previews > summary { padding: 16px 14px; }
+  .preview-provenance .text-link { margin-left: 0; }
+  .preview-frame-scroll iframe { height: 620px; }
+  .preview-controls > .button { flex: 1; }
+}

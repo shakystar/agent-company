@@ -1,0 +1,13 @@
+*
+!Dockerfile
+!browser.Dockerfile
+!browser.mjs
+!browser-source.mjs
+!entry.mjs
+!principles.mjs
+!team-mcp.mjs
+!workspace.mjs
+!storage.mjs
+!growth.mjs
+!environment.mjs
+!npm-empty.npmrc

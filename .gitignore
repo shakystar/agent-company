@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.data/
+.env
+.env.*
+!.env.example
+*.log
+artifacts/
+.browser/
+.verification/
+desktop/builds/
+desktop/worker-builds/
+desktop/build-cache/
+desktop/**/target/
+desktop/src-tauri/gen/
+*.tsbuildinfo

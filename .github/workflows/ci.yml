@@ -1,0 +1,33 @@
+name: Verify platform and worker
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  platform:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: node --check worker/entry.mjs
+  worker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - run: docker build -t agent-company-worker:0.1.0 worker
+      - run: docker run --rm --entrypoint codex agent-company-worker:0.1.0 --version

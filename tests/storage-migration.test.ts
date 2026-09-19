@@ -1,0 +1,86 @@
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import { randomUUID } from 'node:crypto';
+import { mkdtemp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { StorageManager, activeStorage, type StorageHost } from '../server/storage.ts';
+import { WorkspaceStore } from '../server/store.ts';
+import { StorageFixtureRuntime } from './storage-fixture.ts';
+import { cutoverDocument, cutoverJournalPath, sourceFencePath } from '../server/desktop-migration-cutover.ts';
+
+test('protected cross-owner export/import keeps original databases, owners, source bytes and volume content', async t => {
+  const dir = await mkdtemp(join(tmpdir(), 'ac-migration-'));
+  const stores = new Set<WorkspaceStore>();
+  t.after(async () => { for (const store of stores) await store.close(); await rm(dir, { recursive: true }); });
+  const sourceOwner = randomUUID(), targetOwner = randomUUID(), runId = randomUUID();
+  const sourceDir = join(dir, 'source'), targetDir = join(dir, 'workspace');
+  await mkdir(sourceDir); await mkdir(targetDir);
+  const sourceStore = await WorkspaceStore.open(join(sourceDir, 'db')); stores.add(sourceStore);
+  const targetStore = await WorkspaceStore.open(join(targetDir, 'db')); stores.add(targetStore);
+  await sourceStore.change(state => { state.operatorPaused = false; });
+  await targetStore.change(state => { state.operatorPaused = true; });
+  const sourceRuntime = new StorageFixtureRuntime(sourceOwner), targetRuntime = new StorageFixtureRuntime(targetOwner);
+  sourceRuntime.spaces.get(sourceOwner)!.set(runId, { 'original.txt': Buffer.from('original bytes').toString('base64') });
+  const sourceHost = { store: sourceStore, runtime: sourceRuntime, dataDir: sourceDir };
+  let targetHost: StorageHost = { store: targetStore, runtime: targetRuntime, dataDir: targetDir };
+  const sourceConfig = { rootDir: sourceDir, backupDir: join(dir, 'source-backups'), ownerKey: sourceOwner, freeSpace: async () => 100 * 1024 ** 3 };
+  const targetConfig = { rootDir: targetDir, backupDir: join(dir, 'target-backups'), ownerKey: targetOwner, freeSpace: sourceConfig.freeSpace };
+  const source = new StorageManager(sourceConfig, () => sourceHost), target = new StorageManager(targetConfig, () => targetHost);
+  const before = await sourceStore.read(), sourceEntries = await readdir(sourceDir);
+  const exported = await source.exportProtected({ directory: join(dir, 'export') });
+  assert.equal(exported.backup.pinned, true);
+  assert.deepEqual(await readdir(sourceDir), sourceEntries, 'export never initializes storage-layout/tmp/backup trees');
+  assert.deepEqual(await sourceStore.read(), before);
+  const reference = { directory: join(dir, 'export'), ownerKey: sourceOwner, backupId: exported.backup.id, manifestSha256: exported.manifestSha256 };
+  const manifestBefore = await readFile(join(reference.directory, 'manifest.json'));
+  await target.initialize();
+  await assert.rejects(target.prepareRestore(reference.backupId), { code: 'ENOENT' });
+  await assert.rejects(target.prepareImport({ ...reference, ownerKey: targetOwner }), /같은 소유자/);
+  await assert.rejects(target.prepareImport({ ...reference, manifestSha256: '0'.repeat(64) }), /해시/);
+  const prepared = await target.prepareImport(reference);
+  assert.equal((await activeStorage(targetConfig)).workspaceKey, targetOwner);
+  const receipt = JSON.parse(await readFile(join(targetDir, 'storage-tmp', prepared.id, 'migration-receipt.json'), 'utf8'));
+  assert.equal(receipt.targetOwnerKey, targetOwner); assert.equal(receipt.source.ownerKey, sourceOwner);
+  assert.notEqual(receipt.workspaceKey, sourceOwner); assert.notEqual(receipt.workspaceKey, targetOwner);
+  await assert.rejects(target.activate(prepared.id), /DESKTOP_MIGRATION_CUTOVER_REQUIRED/);
+  const journal = { version: 1, id: randomUUID(), phase: 'budget-imported', sourceRoot: sourceDir, sourceOwner,
+    targetRoot: dir, targetOwner, generationId: prepared.id, workspaceKey: receipt.workspaceKey,
+    preparationPath: join(dir, 'preparation.json'), preparationSha256: 'a'.repeat(64), payloadManifestPath: join(dir, 'payload.json'),
+    payloadManifestSha256: 'b'.repeat(64), entrySha256: 'c'.repeat(64), controllerSha256: 'd'.repeat(64), createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+  await writeFile(cutoverJournalPath(dir), JSON.stringify(journal));
+  await writeFile(sourceFencePath(sourceDir), JSON.stringify({ version: 1, cutoverId: journal.id, sourceOwner, targetRoot: dir, targetOwner, preparationSha256: journal.preparationSha256 }));
+  const authorization = { journalSha256: (await cutoverDocument(cutoverJournalPath(dir))).sha256 };
+  const stagedStore = await WorkspaceStore.open(join(targetDir, 'storage-tmp', prepared.id, 'db'));
+  await stagedStore.change(state => { state.operatorPaused = false; }); await stagedStore.close();
+  await assert.rejects(target.activate(prepared.id, authorization), /이관 DB/);
+  assert.equal((await activeStorage(targetConfig)).workspaceKey, targetOwner);
+  const repairedStage = await WorkspaceStore.open(join(targetDir, 'storage-tmp', prepared.id, 'db'));
+  await repairedStage.change(state => { state.operatorPaused = true; }); await repairedStage.close();
+  targetHost = await target.activate(prepared.id, authorization); stores.add(targetHost.store);
+  assert.equal((await targetHost.store.read()).operatorPaused, true);
+  assert.equal((await sourceStore.read()).operatorPaused, false);
+  assert.equal((await targetStore.read()).operatorPaused, true);
+  assert.deepEqual(await readFile(join(reference.directory, 'manifest.json')), manifestBefore);
+  assert.equal(((await targetHost.runtime.readWorkspace!(runId, 'original.txt')) as { text: string }).text, 'original bytes');
+  assert.equal((await sourceRuntime.readWorkspace(runId, 'original.txt')).text, 'original bytes');
+  assert.equal((await activeStorage(targetConfig)).workspaceKey, receipt.workspaceKey);
+});
+
+test('protected export rejects low space and existing/overlapping destinations without initializing source', async t => {
+  const dir = await mkdtemp(join(tmpdir(), 'ac-migration-budget-'));
+  const sourceDir = join(dir, 'source'); await mkdir(sourceDir);
+  const store = await WorkspaceStore.open(join(sourceDir, 'db'));
+  t.after(async () => { await store.close(); await rm(dir, { recursive: true }); });
+  const ownerKey = randomUUID(), runtime = new StorageFixtureRuntime(ownerKey);
+  const manager = new StorageManager({ rootDir: sourceDir, backupDir: join(dir, 'backups'), ownerKey, freeSpace: async () => 0 }, () => ({ store, runtime, dataDir: sourceDir }));
+  const before = await readdir(sourceDir);
+  await assert.rejects(manager.exportProtected({ directory: join(dir, 'export') }), /여유 공간/);
+  await assert.rejects(manager.exportProtected({ directory: join(sourceDir, 'export') }), /독립된/);
+  await assert.rejects(manager.exportProtected({ directory: dir }), /독립된/);
+  await mkdir(join(dir, 'existing')); await writeFile(join(dir, 'existing', 'keep'), 'keep');
+  await assert.rejects(manager.exportProtected({ directory: join(dir, 'existing') }), /이미 존재/);
+  assert.equal(await readFile(join(dir, 'existing', 'keep'), 'utf8'), 'keep');
+  assert.deepEqual(await readdir(sourceDir), before);
+  assert.equal((await readdir(dir)).includes('export'), false);
+});

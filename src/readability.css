@@ -1,0 +1,142 @@
+/* Shared type sizes stay stable on narrow screens and follow browser text zoom. */
+:root {
+  font-size: 100%;
+  --text-caption: .8125rem;
+  --text-small: .875rem;
+  --text-body: 1rem;
+  --muted: #626e58;
+}
+
+.text-content,
+.run-events li .text-content,
+.run-result,
+.conversation-run-result,
+.conversation-events .text-content,
+.knowledge-card .text-content,
+.skill-body > .text-content,
+.growth-revision-body > .text-content,
+.activity-copy p,
+.workflow-content {
+  font-size: var(--text-body);
+  line-height: 1.8;
+  color: var(--ink);
+}
+
+.field input:not([type=checkbox]):not([type=radio]),
+.field textarea,
+.field select,
+.composer textarea,
+.conversation-composer > textarea {
+  font-size: var(--text-body);
+}
+
+.field > span,
+.field-label,
+.member-name,
+.field small,
+.permission-label,
+.permission-label small,
+.permission-note,
+.connection-options label,
+.connection-options small,
+.check-row,
+.modal-heading .eyebrow,
+.identity-preview .field-label {
+  color: var(--muted);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+.button.subtle {
+  color: var(--muted);
+}
+.metric strong small,
+.filter-tabs button,
+.filter-tabs button.active {
+  color: var(--muted);
+}
+.brand-dot,
+.workspace-initial,
+.nav-count,
+.team-list-item strong,
+.workflow-heading h3 {
+  color: #526446;
+}
+.team-detail,
+.team-members,
+.team-member {
+  min-width: 0;
+}
+.team-member {
+  width: 100%;
+}
+.team-member small {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.tag {
+  color: #566447;
+}
+.tag-amber {
+  color: #715b24;
+}
+.button.danger-subtle {
+  color: #8b4f3f;
+}
+.nav-notification {
+  background: #856132;
+  color: #fff;
+}
+.nav-count {
+  color: #415239;
+}
+.back-link,
+.tabs button > span,
+.conversation-legacy > summary,
+.run-budget-notice > span,
+.count,
+.run-list-item p {
+  color: #526446;
+}
+
+.run-events li {
+  flex-wrap: wrap;
+}
+.run-events li > div {
+  flex-basis: min(100%, 24rem);
+}
+.run-events li time {
+  margin-left: auto;
+  max-width: none;
+}
+.growth-review > .text-content {
+  margin-bottom: 12px;
+}
+
+.sidebar {
+  overflow-y: auto;
+}
+.sidebar nav {
+  flex-shrink: 0;
+}
+
+@media (max-width: 680px) {
+  .sidebar {
+    height: 128px;
+  }
+  .sidebar nav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .sidebar nav > button {
+    min-width: 0;
+    padding: 8px 3px;
+  }
+  .main-shell {
+    padding-bottom: 128px;
+  }
+}

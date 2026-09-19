@@ -1,0 +1,28 @@
+.desktop-setup-panel{padding:24px;margin-bottom:28px}
+.desktop-setup-panel .section-heading{flex-wrap:wrap;gap:12px}
+.desktop-setup-phase{display:flex;align-items:center;gap:9px;padding:13px 15px;border:1px solid #dce5d0;border-radius:8px;background:#f1f5e9;color:#536648;font-size:var(--text-body)}
+.desktop-setup-phase>svg{flex-shrink:0}
+.desktop-setup-phase-unavailable,.desktop-setup-phase-failed,.desktop-setup-phase-unknown{background:#faf4e4;border-color:#e8dcb9;color:#796537}
+.desktop-setup-description{font-size:var(--text-small);line-height:1.8;margin:16px 0;color:var(--muted)}
+.desktop-setup-account{display:flex;justify-content:space-between;align-items:center;gap:20px;margin:20px 0}
+.desktop-setup-account>div{min-width:0}
+.desktop-setup-account strong{font-size:var(--text-body)}
+.desktop-setup-account p{font-size:var(--text-small);line-height:1.8;margin:7px 0 0;overflow-wrap:anywhere}
+.desktop-setup-account p>span{display:inline-block;margin-left:10px;color:var(--muted)}
+.desktop-setup-account>.button{flex-shrink:0}
+.desktop-setup-methods{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;margin:22px 0}
+.desktop-setup-methods h3{font-size:var(--text-body);margin:0 0 13px}
+.desktop-setup-methods p{font-size:var(--text-small);line-height:1.8;color:var(--muted);margin:10px 0 15px}
+.desktop-setup-chatgpt>.button{margin:0 8px 8px 0}
+.desktop-setup-key{border-left:1px solid var(--line);padding-left:28px}
+.desktop-setup-key>label,.desktop-setup-copy-field>label{display:block;font-size:var(--text-small);font-weight:600;margin-bottom:8px}
+.desktop-setup-key>input,.desktop-setup-copy-field input{width:100%;min-width:0;border:1px solid var(--line);border-radius:6px;padding:10px 12px;background:#fff;color:inherit;font:inherit;font-size:var(--text-small)}
+.desktop-setup-key>input:disabled{background:#f2f3ee}
+.desktop-setup-copy-field{margin:17px 0 8px}
+.desktop-setup-copy-field>div{display:flex;gap:10px}
+.desktop-setup-copy-field .button{flex-shrink:0}
+.desktop-setup-copy-field .desktop-setup-code{font-family:monospace;font-size:17px;letter-spacing:2px}
+.desktop-setup-copy-notice{display:block;min-height:20px;margin-top:5px;font-size:var(--text-caption);color:var(--muted);line-height:1.7}
+.desktop-setup-device>.button{margin-top:5px}
+.desktop-setup-execution-note{font-size:var(--text-small);color:var(--muted);line-height:1.8;padding-top:16px;margin:18px 0 0;border-top:1px solid var(--line)}
+@media(max-width:680px){.desktop-setup-panel{padding:18px}.desktop-setup-methods{grid-template-columns:1fr;gap:20px}.desktop-setup-key{padding:20px 0 0;border-left:0;border-top:1px solid var(--line)}.desktop-setup-account{align-items:flex-start;flex-wrap:wrap}.desktop-setup-copy-field>div{flex-wrap:wrap}.desktop-setup-copy-field .button{min-height:36px}.desktop-setup-panel .section-heading h2{font-size:16px}}

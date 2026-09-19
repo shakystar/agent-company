@@ -1,0 +1,22 @@
+{
+  "version": "24.11.1",
+  "target": "x86_64-pc-windows-msvc",
+  "commit": "18aefb2d2b36938316d27b5cb53089e97632f0c3",
+  "executable": {
+    "url": "https://nodejs.org/dist/v24.11.1/win-x64/node.exe",
+    "sha256": "f13ac3ca23248dc389507e8fe38c34489ab7edb3e6d6700eb6da6a0b7e128eaf"
+  },
+  "license": {
+    "file": "LICENSE",
+    "url": "https://raw.githubusercontent.com/nodejs/node/18aefb2d2b36938316d27b5cb53089e97632f0c3/LICENSE",
+    "bytes": 143310,
+    "sha256": "537308465103a306d0e3eecf42632b4ff1b48aaaec044e9fc10a78c81fd00b34"
+  },
+  "checksums": {
+    "file": "SHASUMS256.txt",
+    "url": "https://nodejs.org/dist/v24.11.1/SHASUMS256.txt",
+    "bytes": 2967,
+    "sha256": "ed0ec6c5c648a0489edebf2f21f5913e3d6e469c77d19cb4f50a729b66e77883"
+  },
+  "checksumSource": "Official HTTPS release document; release GPG signature not verified here"
+}

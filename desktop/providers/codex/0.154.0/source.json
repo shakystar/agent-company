@@ -1,0 +1,702 @@
+{
+  "schemaVersion": 1,
+  "provider": "codex",
+  "version": "0.154.0",
+  "target": "x86_64-pc-windows-msvc",
+  "repository": "https://github.com/openai/codex",
+  "releaseUrl": "https://github.com/openai/codex/releases/tag/rust-v0.154.0",
+  "releaseId": 385887902,
+  "commit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+  "executable": {
+    "assetId": 553706480,
+    "url": "https://github.com/openai/codex/releases/download/rust-v0.154.0/codex-x86_64-pc-windows-msvc.exe",
+    "bytes": 298169136,
+    "sha256": "be96b992178b1e467c225800da0d65f2c86d5eba1ef0b14632f65db381cbdfde"
+  },
+  "notices": [
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/openai/codex/6b9826e3aa83b1a5947db50f4332cb9c65f1b340/LICENSE",
+      "bytes": 10926,
+      "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc",
+      "gitBlob": "4606e72e042564097e8780d66c1d4dcb611869bd"
+    },
+    {
+      "file": "NOTICE",
+      "url": "https://raw.githubusercontent.com/openai/codex/6b9826e3aa83b1a5947db50f4332cb9c65f1b340/NOTICE",
+      "bytes": 242,
+      "sha256": "9d71575ecfd9a843fc1677b0efb08053c6ba9fd686a0de1a6f5382fd3c220915",
+      "gitBlob": "2805899d56d0332d175cfc613c67d45d6f006db7"
+    },
+    {
+      "file": "LICENSE.wezterm",
+      "upstreamPath": "third_party/wezterm/LICENSE",
+      "url": "https://raw.githubusercontent.com/openai/codex/6b9826e3aa83b1a5947db50f4332cb9c65f1b340/third_party/wezterm/LICENSE",
+      "bytes": 1076,
+      "sha256": "331312c214f14dc1455a0e45e3a66f4b70bbc73916cffd525570e8cdb9d63bf4",
+      "gitBlob": "d6c7256999f5e91218e3cc8bb7fc04a0b54e6d71"
+    },
+    {
+      "file": "LICENSE.imagegen",
+      "upstreamPath": "codex-rs/skills/src/assets/samples/imagegen/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/openai/codex/6b9826e3aa83b1a5947db50f4332cb9c65f1b340/codex-rs/skills/src/assets/samples/imagegen/LICENSE.txt",
+      "bytes": 10776,
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "gitBlob": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+    },
+    {
+      "file": "LICENSE.openai-docs",
+      "upstreamPath": "codex-rs/skills/src/assets/samples/openai-docs/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/openai/codex/6b9826e3aa83b1a5947db50f4332cb9c65f1b340/codex-rs/skills/src/assets/samples/openai-docs/LICENSE.txt",
+      "bytes": 10776,
+      "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+      "gitBlob": "13e25df86ce06eb6488e6a6bc5c5847f5dedc352"
+    },
+    {
+      "file": "LICENSE.skill-creator",
+      "upstreamPath": "codex-rs/skills/src/assets/samples/skill-creator/license.txt",
+      "url": "https://raw.githubusercontent.com/openai/codex/6b9826e3aa83b1a5947db50f4332cb9c65f1b340/codex-rs/skills/src/assets/samples/skill-creator/license.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "gitBlob": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    {
+      "file": "LICENSE.skill-installer",
+      "upstreamPath": "codex-rs/skills/src/assets/samples/skill-installer/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/openai/codex/6b9826e3aa83b1a5947db50f4332cb9c65f1b340/codex-rs/skills/src/assets/samples/skill-installer/LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "gitBlob": "d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    {
+      "file": "LICENSE.ratatui",
+      "upstreamRepository": "https://github.com/ratatui/ratatui",
+      "upstreamCommit": "e665c36cb14752a61cd777fbd06dbef8474f2add",
+      "upstreamPath": "LICENSE",
+      "url": "https://raw.githubusercontent.com/ratatui/ratatui/e665c36cb14752a61cd777fbd06dbef8474f2add/LICENSE",
+      "bytes": 1132,
+      "sha256": "50eb43e8d742c9c61a9391e42b2184fce54dbd1893a1bb1c85b8c9ee217ab1f5",
+      "gitBlob": "776bf200770e7bb9b264f3cf41ad09e2a83a1509",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "ratatui",
+        "version": "0.30.2",
+        "checksum": "3274ba0a2c5e1bcad2a2005d20f4dc59dad26b2eb0940fb094500dba4099d57d",
+        "url": "https://static.crates.io/crates/ratatui/ratatui-0.30.2.crate",
+        "archivePath": "ratatui-0.30.2/LICENSE",
+        "vcsCommit": "e665c36cb14752a61cd777fbd06dbef8474f2add",
+        "vcsPath": "ratatui"
+      }
+    },
+    {
+      "file": "LICENSE.syntect",
+      "upstreamRepository": "https://github.com/trishume/syntect",
+      "upstreamCommit": "e4670846ecf16d8832db6c43d531bec466214e27",
+      "upstreamPath": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/trishume/syntect/e4670846ecf16d8832db6c43d531bec466214e27/LICENSE.txt",
+      "bytes": 1116,
+      "sha256": "c695a20d7feb2463ecc9f0a966c88ed1581e364e1e22796e0ded020b571fa43b",
+      "gitBlob": "7ddbcce5d4aaf4320a8b5f80a9b0791a077cb399",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "syntect",
+        "version": "5.3.0",
+        "checksum": "656b45c05d95a5704399aeef6bd0ddec7b2b3531b7c9e900abbf7c4d2190c925",
+        "url": "https://static.crates.io/crates/syntect/syntect-5.3.0.crate",
+        "archivePath": "syntect-5.3.0/LICENSE.txt",
+        "vcsCommit": "e4670846ecf16d8832db6c43d531bec466214e27",
+        "vcsPath": ""
+      }
+    },
+    {
+      "file": "LICENSE.onig",
+      "upstreamRepository": "https://github.com/rust-onig/rust-onig",
+      "upstreamCommit": "ed05d7ac1a1a138c6d9c46b451b9d9bea0fbe0b1",
+      "upstreamPath": "LICENSE.md",
+      "url": "https://raw.githubusercontent.com/rust-onig/rust-onig/ed05d7ac1a1a138c6d9c46b451b9d9bea0fbe0b1/LICENSE.md",
+      "bytes": 1456,
+      "sha256": "e9c1238c5beb73c6cc130160418968058b21d486a7a445f0ceff27d51fbfdc44",
+      "gitBlob": "942c017c875d3ebb56c1c57392184d2628029e62",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "onig",
+        "version": "6.5.1",
+        "checksum": "336b9c63443aceef14bea841b899035ae3abe89b7c486aaf4c5bd8aafedac3f0",
+        "url": "https://static.crates.io/crates/onig/onig-6.5.1.crate",
+        "archivePath": "onig-6.5.1/LICENSE.md",
+        "vcsCommit": "ed05d7ac1a1a138c6d9c46b451b9d9bea0fbe0b1",
+        "vcsPath": "onig"
+      }
+    },
+    {
+      "file": "LICENSE.onig-sys",
+      "upstreamRepository": "https://github.com/rust-onig/rust-onig",
+      "upstreamCommit": "ed05d7ac1a1a138c6d9c46b451b9d9bea0fbe0b1",
+      "upstreamPath": "onig_sys/LICENSE.md",
+      "url": "https://raw.githubusercontent.com/rust-onig/rust-onig/ed05d7ac1a1a138c6d9c46b451b9d9bea0fbe0b1/onig_sys/LICENSE.md",
+      "bytes": 1511,
+      "sha256": "71f321038b088358004bee991635ac09e4c703bec467d3c30c06992c0595f189",
+      "gitBlob": "5b0fc41df44f47904d3a53587141f16dd11c88e1",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "onig_sys",
+        "version": "69.9.1",
+        "checksum": "c7f86c6eef3d6df15f23bcfb6af487cbd2fed4e5581d58d5bf1f5f8b7f6727dc",
+        "url": "https://static.crates.io/crates/onig_sys/onig_sys-69.9.1.crate",
+        "archivePath": "onig_sys-69.9.1/LICENSE.md",
+        "vcsCommit": "ed05d7ac1a1a138c6d9c46b451b9d9bea0fbe0b1",
+        "vcsPath": "onig_sys"
+      }
+    },
+    {
+      "file": "LICENSE.oniguruma",
+      "upstreamRepository": "https://github.com/kkos/oniguruma",
+      "upstreamCommit": "94877ac5901c30cc7022f4f464da393b04cd3375",
+      "upstreamPath": "COPYING",
+      "url": "https://raw.githubusercontent.com/kkos/oniguruma/94877ac5901c30cc7022f4f464da393b04cd3375/COPYING",
+      "bytes": 1340,
+      "sha256": "70ba5469ea0bab6e18a32d7009068f996503168d27be57747e08da34337ff26f",
+      "gitBlob": "ee4d7cf05501ee338de85b1e92df869c1e8d5bbf",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "onig_sys",
+        "version": "69.9.1",
+        "checksum": "c7f86c6eef3d6df15f23bcfb6af487cbd2fed4e5581d58d5bf1f5f8b7f6727dc",
+        "url": "https://static.crates.io/crates/onig_sys/onig_sys-69.9.1.crate",
+        "archivePath": "onig_sys-69.9.1/oniguruma/COPYING",
+        "vcsCommit": "ed05d7ac1a1a138c6d9c46b451b9d9bea0fbe0b1",
+        "vcsPath": "onig_sys"
+      },
+      "vendoredSource": {
+        "repository": "https://github.com/rust-onig/rust-onig",
+        "commit": "ed05d7ac1a1a138c6d9c46b451b9d9bea0fbe0b1",
+        "path": "onig_sys/oniguruma",
+        "gitCommit": "94877ac5901c30cc7022f4f464da393b04cd3375"
+      }
+    },
+    {
+      "file": "LICENSE.aws-lc-rs",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/aws/aws-lc-rs",
+      "upstreamCommit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+      "upstreamPath": "aws-lc-rs/LICENSE",
+      "url": "https://raw.githubusercontent.com/aws/aws-lc-rs/d61726b69d589460645e1b22ebd9a847b7f2f63a/aws-lc-rs/LICENSE",
+      "bytes": 11085,
+      "sha256": "b50b376e7d24a0598488b730c3034ffcd0b58dd36c0913a24b9903a3cfd04bf7",
+      "gitBlob": "58d28381ce50dbaa4ca4d54772f5609003f169db",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "aws-lc-rs",
+        "version": "1.16.2",
+        "checksum": "a054912289d18629dc78375ba2c3726a3afe3ff71b4edba9dedfca0e3446d1fc",
+        "url": "https://static.crates.io/crates/aws-lc-rs/aws-lc-rs-1.16.2.crate",
+        "vcsCommit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "vcsPath": "aws-lc-rs",
+        "archivePath": "aws-lc-rs-1.16.2/LICENSE"
+      }
+    },
+    {
+      "file": "LICENSE.aws-lc-sys",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/aws/aws-lc-rs",
+      "upstreamCommit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+      "upstreamPath": "aws-lc-sys/LICENSE",
+      "url": "https://raw.githubusercontent.com/aws/aws-lc-rs/d61726b69d589460645e1b22ebd9a847b7f2f63a/aws-lc-sys/LICENSE",
+      "bytes": 20337,
+      "sha256": "728536b4160e051f86d7c9c388f704866b3d512cd7df97ac3516c65279523c4e",
+      "gitBlob": "5e3526d07a1476c17187e8f4e36d0398350b8474",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "aws-lc-sys",
+        "version": "0.39.0",
+        "checksum": "1fa7e52a4c5c547c741610a2c6f123f3881e409b714cd27e6798ef020c514f0a",
+        "url": "https://static.crates.io/crates/aws-lc-sys/aws-lc-sys-0.39.0.crate",
+        "vcsCommit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "vcsPath": "aws-lc-sys",
+        "archivePath": "aws-lc-sys-0.39.0/LICENSE"
+      }
+    },
+    {
+      "file": "LICENSE.aws-lc",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/aws/aws-lc",
+      "upstreamCommit": "47389586f8aa77c83245173793f4d44ed1d6c3a8",
+      "upstreamPath": "LICENSE",
+      "url": "https://raw.githubusercontent.com/aws/aws-lc/47389586f8aa77c83245173793f4d44ed1d6c3a8/LICENSE",
+      "bytes": 20338,
+      "sha256": "977c541bd25ffe36975dde25c028c0cd15ddf3d08243983b58e8a6a3d9447523",
+      "gitBlob": "84460bca2f5d8d0bd19a6641e4af59ac7f8a8c4e",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "aws-lc-sys",
+        "version": "0.39.0",
+        "checksum": "1fa7e52a4c5c547c741610a2c6f123f3881e409b714cd27e6798ef020c514f0a",
+        "url": "https://static.crates.io/crates/aws-lc-sys/aws-lc-sys-0.39.0.crate",
+        "vcsCommit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "vcsPath": "aws-lc-sys",
+        "archivePath": "aws-lc-sys-0.39.0/aws-lc/LICENSE"
+      },
+      "vendoredSource": {
+        "repository": "https://github.com/aws/aws-lc-rs",
+        "commit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "path": "aws-lc-sys/aws-lc",
+        "gitCommit": "47389586f8aa77c83245173793f4d44ed1d6c3a8"
+      }
+    },
+    {
+      "file": "LICENSE.aws-lc-fiat",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/aws/aws-lc",
+      "upstreamCommit": "47389586f8aa77c83245173793f4d44ed1d6c3a8",
+      "upstreamPath": "third_party/fiat/LICENSE",
+      "url": "https://raw.githubusercontent.com/aws/aws-lc/47389586f8aa77c83245173793f4d44ed1d6c3a8/third_party/fiat/LICENSE",
+      "bytes": 1161,
+      "sha256": "43e358d7b6eb109d0f51f7b3a090fd82607965767c25fadee39e922475de2061",
+      "gitBlob": "70cae03773c68f43a4adc7b1b0421915f5527f13",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "aws-lc-sys",
+        "version": "0.39.0",
+        "checksum": "1fa7e52a4c5c547c741610a2c6f123f3881e409b714cd27e6798ef020c514f0a",
+        "url": "https://static.crates.io/crates/aws-lc-sys/aws-lc-sys-0.39.0.crate",
+        "vcsCommit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "vcsPath": "aws-lc-sys",
+        "archivePath": "aws-lc-sys-0.39.0/aws-lc/third_party/fiat/LICENSE"
+      },
+      "vendoredSource": {
+        "repository": "https://github.com/aws/aws-lc-rs",
+        "commit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "path": "aws-lc-sys/aws-lc",
+        "gitCommit": "47389586f8aa77c83245173793f4d44ed1d6c3a8"
+      }
+    },
+    {
+      "file": "LICENSE.aws-lc-s2n-bignum",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/aws/aws-lc",
+      "upstreamCommit": "47389586f8aa77c83245173793f4d44ed1d6c3a8",
+      "upstreamPath": "third_party/s2n-bignum/s2n-bignum-imported/LICENSE",
+      "url": "https://raw.githubusercontent.com/aws/aws-lc/47389586f8aa77c83245173793f4d44ed1d6c3a8/third_party/s2n-bignum/s2n-bignum-imported/LICENSE",
+      "bytes": 12053,
+      "sha256": "41c6380384dc6065456d01405ef0b43e5fe39ba1bccc4ec67801cc66142728e5",
+      "gitBlob": "7a5168f979da29652127a9442074eb54958757c6",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "aws-lc-sys",
+        "version": "0.39.0",
+        "checksum": "1fa7e52a4c5c547c741610a2c6f123f3881e409b714cd27e6798ef020c514f0a",
+        "url": "https://static.crates.io/crates/aws-lc-sys/aws-lc-sys-0.39.0.crate",
+        "vcsCommit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "vcsPath": "aws-lc-sys"
+      },
+      "vendoredSource": {
+        "repository": "https://github.com/aws/aws-lc-rs",
+        "commit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "path": "aws-lc-sys/aws-lc",
+        "gitCommit": "47389586f8aa77c83245173793f4d44ed1d6c3a8"
+      },
+      "sourceConnection": "Original notice for a native component named by the checksum-verified archive license; separate notice file is omitted from the crate.",
+      "referencedBy": [
+        "aws-lc-sys-0.39.0/aws-lc/LICENSE"
+      ]
+    },
+    {
+      "file": "LICENSE.aws-lc-jitterentropy",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/aws/aws-lc",
+      "upstreamCommit": "47389586f8aa77c83245173793f4d44ed1d6c3a8",
+      "upstreamPath": "third_party/jitterentropy/jitterentropy-library/LICENSE",
+      "url": "https://raw.githubusercontent.com/aws/aws-lc/47389586f8aa77c83245173793f4d44ed1d6c3a8/third_party/jitterentropy/jitterentropy-library/LICENSE",
+      "bytes": 1782,
+      "sha256": "088d208b9d22530691f1e9406a85dd7f6f5a42e3cf23d3d6df6582408e3840f7",
+      "gitBlob": "89629e7ffa7307d2c509bfc3368f28288092f858",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "aws-lc-sys",
+        "version": "0.39.0",
+        "checksum": "1fa7e52a4c5c547c741610a2c6f123f3881e409b714cd27e6798ef020c514f0a",
+        "url": "https://static.crates.io/crates/aws-lc-sys/aws-lc-sys-0.39.0.crate",
+        "vcsCommit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "vcsPath": "aws-lc-sys"
+      },
+      "vendoredSource": {
+        "repository": "https://github.com/aws/aws-lc-rs",
+        "commit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "path": "aws-lc-sys/aws-lc",
+        "gitCommit": "47389586f8aa77c83245173793f4d44ed1d6c3a8"
+      },
+      "sourceConnection": "Original notice for a native component named by the checksum-verified archive license; separate notice file is omitted from the crate.",
+      "referencedBy": [
+        "aws-lc-sys-0.39.0/aws-lc/LICENSE"
+      ]
+    },
+    {
+      "file": "LICENSE.aws-lc-jitterentropy-bsd",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/aws/aws-lc",
+      "upstreamCommit": "47389586f8aa77c83245173793f4d44ed1d6c3a8",
+      "upstreamPath": "third_party/jitterentropy/jitterentropy-library/LICENSE.bsd",
+      "url": "https://raw.githubusercontent.com/aws/aws-lc/47389586f8aa77c83245173793f4d44ed1d6c3a8/third_party/jitterentropy/jitterentropy-library/LICENSE.bsd",
+      "bytes": 1382,
+      "sha256": "13aa749a5b0a454917a944ed8fffc530b784f5ead522b1aacaf4ec8aa55a6239",
+      "gitBlob": "8a704271906c86f28d8d6109b823520f718444cf",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "aws-lc-sys",
+        "version": "0.39.0",
+        "checksum": "1fa7e52a4c5c547c741610a2c6f123f3881e409b714cd27e6798ef020c514f0a",
+        "url": "https://static.crates.io/crates/aws-lc-sys/aws-lc-sys-0.39.0.crate",
+        "vcsCommit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "vcsPath": "aws-lc-sys"
+      },
+      "vendoredSource": {
+        "repository": "https://github.com/aws/aws-lc-rs",
+        "commit": "d61726b69d589460645e1b22ebd9a847b7f2f63a",
+        "path": "aws-lc-sys/aws-lc",
+        "gitCommit": "47389586f8aa77c83245173793f4d44ed1d6c3a8"
+      },
+      "sourceConnection": "Original notice for a native component named by the checksum-verified archive license; separate notice file is omitted from the crate.",
+      "referencedBy": [
+        "aws-lc-sys-0.39.0/aws-lc/LICENSE"
+      ]
+    },
+    {
+      "file": "LICENSE.sqlx-apache",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/launchbadge/sqlx",
+      "upstreamCommit": "003b698e99e024f3621b8043a2426fde5b741171",
+      "upstreamPath": "LICENSE-APACHE",
+      "url": "https://raw.githubusercontent.com/launchbadge/sqlx/003b698e99e024f3621b8043a2426fde5b741171/LICENSE-APACHE",
+      "bytes": 10297,
+      "sha256": "c8f5453612253e8ea8bad241617fe74c4a6d5d592ba64ff881668c211b50ac99",
+      "gitBlob": "e14699fb149e0b5cd2f2aa206d7bc4d5f8828fc3",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "sqlx",
+        "version": "0.9.0",
+        "checksum": "378620ccc25c62c89d8be1c819e76a88d59bdcc3304733330788948e619bfd71",
+        "url": "https://static.crates.io/crates/sqlx/sqlx-0.9.0.crate",
+        "vcsCommit": "003b698e99e024f3621b8043a2426fde5b741171",
+        "vcsPath": "",
+        "archivePath": "sqlx-0.9.0/LICENSE-APACHE"
+      }
+    },
+    {
+      "file": "LICENSE.sqlx-mit",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/launchbadge/sqlx",
+      "upstreamCommit": "003b698e99e024f3621b8043a2426fde5b741171",
+      "upstreamPath": "LICENSE-MIT",
+      "url": "https://raw.githubusercontent.com/launchbadge/sqlx/003b698e99e024f3621b8043a2426fde5b741171/LICENSE-MIT",
+      "bytes": 1109,
+      "sha256": "5abbdd842310c8f1650fcde3a5a51a3e09412b9e5a6eea87519e0db9e32b339d",
+      "gitBlob": "6fe828e8eab3262db2dd59e567e3b35d8aea0f66",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "sqlx",
+        "version": "0.9.0",
+        "checksum": "378620ccc25c62c89d8be1c819e76a88d59bdcc3304733330788948e619bfd71",
+        "url": "https://static.crates.io/crates/sqlx/sqlx-0.9.0.crate",
+        "vcsCommit": "003b698e99e024f3621b8043a2426fde5b741171",
+        "vcsPath": "",
+        "archivePath": "sqlx-0.9.0/LICENSE-MIT"
+      }
+    },
+    {
+      "file": "LICENSE.libsqlite3-sys",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/rusqlite/rusqlite",
+      "upstreamCommit": "2a1790a69107cd03dae85d501dcbdb11c5b32ef3",
+      "upstreamPath": "LICENSE",
+      "url": "https://raw.githubusercontent.com/rusqlite/rusqlite/2a1790a69107cd03dae85d501dcbdb11c5b32ef3/LICENSE",
+      "bytes": 1067,
+      "sha256": "c10c1f27337546471e5f7e4e97fdd398b35b9d4e126115dcd22de8d8e65abf6f",
+      "gitBlob": "08c660f5be514958a1179ccadf63a1f488807aa1",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "libsqlite3-sys",
+        "version": "0.37.0",
+        "checksum": "b1f111c8c41e7c61a49cd34e44c7619462967221a6443b0ec299e0ac30cfb9b1",
+        "url": "https://static.crates.io/crates/libsqlite3-sys/libsqlite3-sys-0.37.0.crate",
+        "vcsCommit": "2a1790a69107cd03dae85d501dcbdb11c5b32ef3",
+        "vcsPath": "libsqlite3-sys",
+        "archivePath": "libsqlite3-sys-0.37.0/LICENSE"
+      }
+    },
+    {
+      "file": "LICENSE.zstd",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/gyscos/zstd-rs",
+      "upstreamCommit": "52e9d41a645fb49edcf1ed3df765f380dbcf13b2",
+      "upstreamPath": "LICENSE",
+      "url": "https://raw.githubusercontent.com/gyscos/zstd-rs/52e9d41a645fb49edcf1ed3df765f380dbcf13b2/LICENSE",
+      "bytes": 1080,
+      "sha256": "129e8edef29e9abcd2ebabe252f4ef1b1289cdca356bf0040284a2fbccfb96c8",
+      "gitBlob": "1190b3c62159e85f739d7cdd1e53f21c318f48f2",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "zstd",
+        "version": "0.13.3",
+        "checksum": "e91ee311a569c327171651566e07972200e76fcfe2242a4fa446149a3881c08a",
+        "url": "https://static.crates.io/crates/zstd/zstd-0.13.3.crate",
+        "vcsCommit": "52e9d41a645fb49edcf1ed3df765f380dbcf13b2",
+        "vcsPath": "",
+        "archivePath": "zstd-0.13.3/LICENSE"
+      }
+    },
+    {
+      "file": "LICENSE.zstd-safe-apache",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/gyscos/zstd-rs",
+      "upstreamCommit": "229054099aa73f7e861762f687d7e07cac1d9b3b",
+      "upstreamPath": "zstd-safe/LICENSE.Apache-2.0",
+      "url": "https://raw.githubusercontent.com/gyscos/zstd-rs/229054099aa73f7e861762f687d7e07cac1d9b3b/zstd-safe/LICENSE.Apache-2.0",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "gitBlob": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "zstd-safe",
+        "version": "7.2.4",
+        "checksum": "8f49c4d5f0abb602a93fb8736af2a4f4dd9512e36f7f570d66e65ff867ed3b9d",
+        "url": "https://static.crates.io/crates/zstd-safe/zstd-safe-7.2.4.crate",
+        "vcsCommit": "229054099aa73f7e861762f687d7e07cac1d9b3b",
+        "vcsPath": "zstd-safe",
+        "archivePath": "zstd-safe-7.2.4/LICENSE.Apache-2.0"
+      }
+    },
+    {
+      "file": "LICENSE.zstd-safe-mit",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/gyscos/zstd-rs",
+      "upstreamCommit": "229054099aa73f7e861762f687d7e07cac1d9b3b",
+      "upstreamPath": "zstd-safe/LICENSE.Mit",
+      "url": "https://raw.githubusercontent.com/gyscos/zstd-rs/229054099aa73f7e861762f687d7e07cac1d9b3b/zstd-safe/LICENSE.Mit",
+      "bytes": 1080,
+      "sha256": "129e8edef29e9abcd2ebabe252f4ef1b1289cdca356bf0040284a2fbccfb96c8",
+      "gitBlob": "1190b3c62159e85f739d7cdd1e53f21c318f48f2",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "zstd-safe",
+        "version": "7.2.4",
+        "checksum": "8f49c4d5f0abb602a93fb8736af2a4f4dd9512e36f7f570d66e65ff867ed3b9d",
+        "url": "https://static.crates.io/crates/zstd-safe/zstd-safe-7.2.4.crate",
+        "vcsCommit": "229054099aa73f7e861762f687d7e07cac1d9b3b",
+        "vcsPath": "zstd-safe",
+        "archivePath": "zstd-safe-7.2.4/LICENSE.Mit"
+      }
+    },
+    {
+      "file": "LICENSE.zstd-sys-apache",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/gyscos/zstd-rs",
+      "upstreamCommit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+      "upstreamPath": "zstd-safe/zstd-sys/LICENSE.Apache-2.0",
+      "url": "https://raw.githubusercontent.com/gyscos/zstd-rs/434ca4cb364e8a81846a2d99d430977e07b15a52/zstd-safe/zstd-sys/LICENSE.Apache-2.0",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "gitBlob": "f433b1a53f5b830a205fd2df78e2b34974656c7b",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "zstd-sys",
+        "version": "2.0.16+zstd.1.5.7",
+        "checksum": "91e19ebc2adc8f83e43039e79776e3fda8ca919132d68a1fed6a5faca2683748",
+        "url": "https://static.crates.io/crates/zstd-sys/zstd-sys-2.0.16+zstd.1.5.7.crate",
+        "vcsCommit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+        "vcsPath": "zstd-safe/zstd-sys",
+        "archivePath": "zstd-sys-2.0.16+zstd.1.5.7/LICENSE.Apache-2.0"
+      }
+    },
+    {
+      "file": "LICENSE.zstd-sys-mit",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/gyscos/zstd-rs",
+      "upstreamCommit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+      "upstreamPath": "zstd-safe/zstd-sys/LICENSE.Mit",
+      "url": "https://raw.githubusercontent.com/gyscos/zstd-rs/434ca4cb364e8a81846a2d99d430977e07b15a52/zstd-safe/zstd-sys/LICENSE.Mit",
+      "bytes": 1080,
+      "sha256": "129e8edef29e9abcd2ebabe252f4ef1b1289cdca356bf0040284a2fbccfb96c8",
+      "gitBlob": "1190b3c62159e85f739d7cdd1e53f21c318f48f2",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "zstd-sys",
+        "version": "2.0.16+zstd.1.5.7",
+        "checksum": "91e19ebc2adc8f83e43039e79776e3fda8ca919132d68a1fed6a5faca2683748",
+        "url": "https://static.crates.io/crates/zstd-sys/zstd-sys-2.0.16+zstd.1.5.7.crate",
+        "vcsCommit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+        "vcsPath": "zstd-safe/zstd-sys",
+        "archivePath": "zstd-sys-2.0.16+zstd.1.5.7/LICENSE.Mit"
+      }
+    },
+    {
+      "file": "LICENSE.zstd-sys-bsd",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/gyscos/zstd-rs",
+      "upstreamCommit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+      "upstreamPath": "zstd-safe/zstd-sys/LICENSE.BSD-3-Clause",
+      "url": "https://raw.githubusercontent.com/gyscos/zstd-rs/434ca4cb364e8a81846a2d99d430977e07b15a52/zstd-safe/zstd-sys/LICENSE.BSD-3-Clause",
+      "bytes": 1595,
+      "sha256": "48341f685c87304089aa099b23c386f8bacc519ef555aa7a13e239908907b3fd",
+      "gitBlob": "facdb65b4c8b561478aab49451d7134c2cce4629",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "zstd-sys",
+        "version": "2.0.16+zstd.1.5.7",
+        "checksum": "91e19ebc2adc8f83e43039e79776e3fda8ca919132d68a1fed6a5faca2683748",
+        "url": "https://static.crates.io/crates/zstd-sys/zstd-sys-2.0.16+zstd.1.5.7.crate",
+        "vcsCommit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+        "vcsPath": "zstd-safe/zstd-sys",
+        "archivePath": "zstd-sys-2.0.16+zstd.1.5.7/LICENSE.BSD-3-Clause"
+      }
+    },
+    {
+      "file": "LICENSE.zstd-native",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/facebook/zstd",
+      "upstreamCommit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+      "upstreamPath": "LICENSE",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/LICENSE",
+      "bytes": 1549,
+      "sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+      "gitBlob": "75800288cc243f164b9d130f125e2ffae28f8e39",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "zstd-sys",
+        "version": "2.0.16+zstd.1.5.7",
+        "checksum": "91e19ebc2adc8f83e43039e79776e3fda8ca919132d68a1fed6a5faca2683748",
+        "url": "https://static.crates.io/crates/zstd-sys/zstd-sys-2.0.16+zstd.1.5.7.crate",
+        "vcsCommit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+        "vcsPath": "zstd-safe/zstd-sys",
+        "archivePath": "zstd-sys-2.0.16+zstd.1.5.7/zstd/LICENSE"
+      },
+      "vendoredSource": {
+        "repository": "https://github.com/gyscos/zstd-rs",
+        "commit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+        "path": "zstd-safe/zstd-sys/zstd",
+        "gitCommit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99"
+      }
+    },
+    {
+      "file": "LICENSE.zstd-native-gpl-2.0",
+      "documentKind": "upstream-file",
+      "upstreamRepository": "https://github.com/facebook/zstd",
+      "upstreamCommit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+      "upstreamPath": "COPYING",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/COPYING",
+      "bytes": 18091,
+      "sha256": "f9c375a1be4a41f7b70301dd83c91cb89e41567478859b77eef375a52d782505",
+      "gitBlob": "ecbc0593737be657aef92e3adcf3bcbd6fdb812e",
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "zstd-sys",
+        "version": "2.0.16+zstd.1.5.7",
+        "checksum": "91e19ebc2adc8f83e43039e79776e3fda8ca919132d68a1fed6a5faca2683748",
+        "url": "https://static.crates.io/crates/zstd-sys/zstd-sys-2.0.16+zstd.1.5.7.crate",
+        "vcsCommit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+        "vcsPath": "zstd-safe/zstd-sys",
+        "archivePath": "zstd-sys-2.0.16+zstd.1.5.7/zstd/COPYING"
+      },
+      "vendoredSource": {
+        "repository": "https://github.com/gyscos/zstd-rs",
+        "commit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+        "path": "zstd-safe/zstd-sys/zstd",
+        "gitCommit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99"
+      }
+    },
+    {
+      "file": "NOTICE.sqlite-source",
+      "documentKind": "source-excerpt",
+      "upstreamRepository": "https://github.com/rusqlite/rusqlite",
+      "upstreamCommit": "2a1790a69107cd03dae85d501dcbdb11c5b32ef3",
+      "upstreamPath": "libsqlite3-sys/sqlite3/sqlite3.c",
+      "url": "https://raw.githubusercontent.com/rusqlite/rusqlite/2a1790a69107cd03dae85d501dcbdb11c5b32ef3/libsqlite3-sys/sqlite3/sqlite3.c",
+      "bytes": 427,
+      "sha256": "49cf7bcb103eb3244150a23bb23d840370a4762914faf1b450072a4b03c14670",
+      "upstreamSource": {
+        "bytes": 9390466,
+        "sha256": "9512509b1bccb7461f79bea8aad6280ae4699e925fa4804381b71f59e7efb0c5",
+        "gitBlob": "851a2504cd0bdea0f98f53f3f5508c81c8618afb",
+        "versionDefinitions": [
+          "#define SQLITE_VERSION        \"3.51.3\"",
+          "#define SQLITE_SOURCE_ID      \"2026-03-13 10:38:09 737ae4a34738ffa0c3ff7f9bb18df914dd1cad163f28fd6b6e114a344fe6d618\""
+        ]
+      },
+      "excerpt": {
+        "offset": 1601,
+        "bytes": 427,
+        "sha256": "49cf7bcb103eb3244150a23bb23d840370a4762914faf1b450072a4b03c14670"
+      },
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "libsqlite3-sys",
+        "version": "0.37.0",
+        "checksum": "b1f111c8c41e7c61a49cd34e44c7619462967221a6443b0ec299e0ac30cfb9b1",
+        "url": "https://static.crates.io/crates/libsqlite3-sys/libsqlite3-sys-0.37.0.crate",
+        "archivePath": "libsqlite3-sys-0.37.0/sqlite3/sqlite3.c",
+        "vcsCommit": "2a1790a69107cd03dae85d501dcbdb11c5b32ef3",
+        "vcsPath": "libsqlite3-sys"
+      }
+    },
+    {
+      "file": "NOTICE.zstd-xxhash",
+      "documentKind": "source-excerpt",
+      "upstreamRepository": "https://github.com/facebook/zstd",
+      "upstreamCommit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+      "upstreamPath": "lib/common/xxhash.h",
+      "url": "https://raw.githubusercontent.com/facebook/zstd/f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/xxhash.h",
+      "bytes": 413,
+      "sha256": "305a98499dcac175386474653b2355032da0105a4c78ebbbf3fe7d318151b6ea",
+      "upstreamSource": {
+        "bytes": 262488,
+        "sha256": "8cb837b21a8fe9a6b9dbcd0961ab16e733bfcbfa9e003f3a496ce07ae80aa8ee",
+        "gitBlob": "b6af402fdf4c9a39207974448a0525e20631c115"
+      },
+      "excerpt": {
+        "offset": 0,
+        "bytes": 413,
+        "sha256": "305a98499dcac175386474653b2355032da0105a4c78ebbbf3fe7d318151b6ea"
+      },
+      "cargoSource": {
+        "lockPath": "codex-rs/Cargo.lock",
+        "lockCommit": "6b9826e3aa83b1a5947db50f4332cb9c65f1b340",
+        "name": "zstd-sys",
+        "version": "2.0.16+zstd.1.5.7",
+        "checksum": "91e19ebc2adc8f83e43039e79776e3fda8ca919132d68a1fed6a5faca2683748",
+        "url": "https://static.crates.io/crates/zstd-sys/zstd-sys-2.0.16+zstd.1.5.7.crate",
+        "archivePath": "zstd-sys-2.0.16+zstd.1.5.7/zstd/lib/common/xxhash.h",
+        "vcsCommit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+        "vcsPath": "zstd-safe/zstd-sys"
+      },
+      "vendoredSource": {
+        "repository": "https://github.com/gyscos/zstd-rs",
+        "commit": "434ca4cb364e8a81846a2d99d430977e07b15a52",
+        "path": "zstd-safe/zstd-sys/zstd",
+        "gitCommit": "f8745da6ff1ad1e7bab384bd1f9d742439278e99"
+      }
+    }
+  ]
+}

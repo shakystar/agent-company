@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "supplements": [
+    {
+      "ecosystem": "cargo",
+      "name": "alloc-stdlib",
+      "version": "0.2.4",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig exactly matches dropbox/rust-alloc-no-stdlib@ae42d22078b98549e987d2f03d12df7b984fde47/alloc-stdlib/Cargo.toml. The packaged .cargo_vcs_info.json pins this commit and path alloc-stdlib. These are the original repository license/attribution files at that commit.",
+      "documents": [
+        {
+          "file": "dropbox-rust-alloc-no-stdlib/ae42d22078b98549e987d2f03d12df7b984fde47/LICENSE",
+          "url": "https://raw.githubusercontent.com/dropbox/rust-alloc-no-stdlib/ae42d22078b98549e987d2f03d12df7b984fde47/LICENSE",
+          "commit": "ae42d22078b98549e987d2f03d12df7b984fde47",
+          "gitBlob": "cd496ba72eb37e83a44958358d1f89a8a28cbc15",
+          "upstreamPath": "LICENSE",
+          "bytes": 1483,
+          "sha256": "c0c56f26d9c051cac4d200c34c84e7ae9aaa853e01a982a1df08b09931e518ae"
+        }
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "defmt-parser",
+      "version": "1.0.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig exactly matches knurling-rs/defmt@4a8cdb44891ed57b8ff5a023b6bec7137c48708f/parser/Cargo.toml. The packaged .cargo_vcs_info.json pins this commit and path parser. These are the original repository license/attribution files at that commit.",
+      "documents": [
+        {
+          "file": "knurling-rs-defmt/4a8cdb44891ed57b8ff5a023b6bec7137c48708f/LICENSE-APACHE",
+          "url": "https://raw.githubusercontent.com/knurling-rs/defmt/4a8cdb44891ed57b8ff5a023b6bec7137c48708f/LICENSE-APACHE",
+          "commit": "4a8cdb44891ed57b8ff5a023b6bec7137c48708f",
+          "gitBlob": "11069edd79019f7dafbe3138841cf289209270dd",
+          "upstreamPath": "LICENSE-APACHE",
+          "bytes": 10850,
+          "sha256": "8173d5c29b4f956d532781d2b86e4e30f83e6b7878dce18c919451d6ba707c90"
+        },
+        {
+          "file": "knurling-rs-defmt/4a8cdb44891ed57b8ff5a023b6bec7137c48708f/LICENSE-MIT",
+          "url": "https://raw.githubusercontent.com/knurling-rs/defmt/4a8cdb44891ed57b8ff5a023b6bec7137c48708f/LICENSE-MIT",
+          "commit": "4a8cdb44891ed57b8ff5a023b6bec7137c48708f",
+          "gitBlob": "e68a7ab37c8accca023db5f1505d48e4375d4324",
+          "upstreamPath": "LICENSE-MIT",
+          "bytes": 1053,
+          "sha256": "2710a622a896bba67356913d4d0492cab5465f61b2ecce6d880aeb483834fb50"
+        }
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "selectors",
+      "version": "0.36.1",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig and lib.rs exactly match servo/stylo@635e1a19d02960588a00e189bd4bd5bdb150ec3d/selectors. That fixed lib.rs explicitly directs recipients to https://mozilla.org/MPL/2.0/. The complete original lib.rs and Mozilla's official version-2.0 plain text are retained without alteration. The repository commit does not contain a root/selectors MPL license text file.",
+      "documents": [
+        {
+          "file": "servo-stylo/635e1a19d02960588a00e189bd4bd5bdb150ec3d/selectors-lib.rs.txt",
+          "url": "https://raw.githubusercontent.com/servo/stylo/635e1a19d02960588a00e189bd4bd5bdb150ec3d/selectors/lib.rs",
+          "commit": "635e1a19d02960588a00e189bd4bd5bdb150ec3d",
+          "gitBlob": "e60fe5be257f03091569b56a149e7c95ab186bfb",
+          "upstreamPath": "selectors/lib.rs",
+          "bytes": 643,
+          "sha256": "d54c6e13e9e952dac17d209171df8657e3cae93beaddace4906150cdec8d02e9"
+        },
+        {
+          "file": "mozilla/MPL-2.0.txt",
+          "bytes": 16726,
+          "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04",
+          "url": "https://www.mozilla.org/media/MPL/2.0/index.txt",
+          "upstreamPath": "media/MPL/2.0/index.txt"
+        }
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "unic-char-property",
+      "version": "0.9.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig exactly matches open-i18n/rust-unic@5878605364af97a3358368a6eaef02104af2e016/unic/char/property/Cargo.toml. The packaged .cargo_vcs_info.json pins this commit; its missing path_in_vcs was resolved by the exact manifest-byte match. These are the original repository license/attribution files at that commit.",
+      "documents": [
+        {
+          "file": "open-i18n-rust-unic/0.9.0/LICENSE-APACHE",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-APACHE",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "16fe87b06e802f094b3fbb0894b137bca2b16ef1",
+          "upstreamPath": "LICENSE-APACHE",
+          "bytes": 10847,
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/LICENSE-MIT",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-MIT",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "31aa79387f27e730e33d871925e152e35e428031",
+          "upstreamPath": "LICENSE-MIT",
+          "bytes": 1023,
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/COPYRIGHT.md",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/COPYRIGHT.md",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "0322ceec0b8f15aa2d74a6173c07cc8c6f3764b3",
+          "upstreamPath": "COPYRIGHT.md",
+          "bytes": 608,
+          "sha256": "f5c342c49f3ac804f3e8e7bb62a8040a44c50d47bb36902b1abd13f66a1adf8b"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/AUTHORS",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/AUTHORS",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "ab3575c1f490363e4957adbc77a3783c48f4492b",
+          "upstreamPath": "AUTHORS",
+          "bytes": 664,
+          "sha256": "2748c1a1fba7616917c61d455e8d715ab952671ead63f2026ad0124410596b09"
+        }
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "unic-char-range",
+      "version": "0.9.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig exactly matches open-i18n/rust-unic@5878605364af97a3358368a6eaef02104af2e016/unic/char/range/Cargo.toml. The packaged .cargo_vcs_info.json pins this commit; its missing path_in_vcs was resolved by the exact manifest-byte match. These are the original repository license/attribution files at that commit.",
+      "documents": [
+        {
+          "file": "open-i18n-rust-unic/0.9.0/LICENSE-APACHE",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-APACHE",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "16fe87b06e802f094b3fbb0894b137bca2b16ef1",
+          "upstreamPath": "LICENSE-APACHE",
+          "bytes": 10847,
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/LICENSE-MIT",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-MIT",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "31aa79387f27e730e33d871925e152e35e428031",
+          "upstreamPath": "LICENSE-MIT",
+          "bytes": 1023,
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/COPYRIGHT.md",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/COPYRIGHT.md",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "0322ceec0b8f15aa2d74a6173c07cc8c6f3764b3",
+          "upstreamPath": "COPYRIGHT.md",
+          "bytes": 608,
+          "sha256": "f5c342c49f3ac804f3e8e7bb62a8040a44c50d47bb36902b1abd13f66a1adf8b"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/AUTHORS",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/AUTHORS",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "ab3575c1f490363e4957adbc77a3783c48f4492b",
+          "upstreamPath": "AUTHORS",
+          "bytes": 664,
+          "sha256": "2748c1a1fba7616917c61d455e8d715ab952671ead63f2026ad0124410596b09"
+        }
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "unic-common",
+      "version": "0.9.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig exactly matches open-i18n/rust-unic@5878605364af97a3358368a6eaef02104af2e016/unic/common/Cargo.toml. The packaged .cargo_vcs_info.json pins this commit; its missing path_in_vcs was resolved by the exact manifest-byte match. These are the original repository license/attribution files at that commit.",
+      "documents": [
+        {
+          "file": "open-i18n-rust-unic/0.9.0/LICENSE-APACHE",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-APACHE",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "16fe87b06e802f094b3fbb0894b137bca2b16ef1",
+          "upstreamPath": "LICENSE-APACHE",
+          "bytes": 10847,
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/LICENSE-MIT",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-MIT",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "31aa79387f27e730e33d871925e152e35e428031",
+          "upstreamPath": "LICENSE-MIT",
+          "bytes": 1023,
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/COPYRIGHT.md",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/COPYRIGHT.md",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "0322ceec0b8f15aa2d74a6173c07cc8c6f3764b3",
+          "upstreamPath": "COPYRIGHT.md",
+          "bytes": 608,
+          "sha256": "f5c342c49f3ac804f3e8e7bb62a8040a44c50d47bb36902b1abd13f66a1adf8b"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/AUTHORS",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/AUTHORS",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "ab3575c1f490363e4957adbc77a3783c48f4492b",
+          "upstreamPath": "AUTHORS",
+          "bytes": 664,
+          "sha256": "2748c1a1fba7616917c61d455e8d715ab952671ead63f2026ad0124410596b09"
+        }
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "unic-ucd-ident",
+      "version": "0.9.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig exactly matches open-i18n/rust-unic@8a6ce83063d90b91ae2ce59eddb803edd393fca9/unic/ucd/ident/Cargo.toml. The packaged .cargo_vcs_info.json pins this commit; its missing path_in_vcs was resolved by the exact manifest-byte match. These are the original repository license/attribution files at that commit.",
+      "documents": [
+        {
+          "file": "open-i18n-rust-unic/0.9.0/LICENSE-APACHE",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/8a6ce83063d90b91ae2ce59eddb803edd393fca9/LICENSE-APACHE",
+          "commit": "8a6ce83063d90b91ae2ce59eddb803edd393fca9",
+          "gitBlob": "16fe87b06e802f094b3fbb0894b137bca2b16ef1",
+          "upstreamPath": "LICENSE-APACHE",
+          "bytes": 10847,
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/LICENSE-MIT",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/8a6ce83063d90b91ae2ce59eddb803edd393fca9/LICENSE-MIT",
+          "commit": "8a6ce83063d90b91ae2ce59eddb803edd393fca9",
+          "gitBlob": "31aa79387f27e730e33d871925e152e35e428031",
+          "upstreamPath": "LICENSE-MIT",
+          "bytes": 1023,
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/COPYRIGHT.md",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/8a6ce83063d90b91ae2ce59eddb803edd393fca9/COPYRIGHT.md",
+          "commit": "8a6ce83063d90b91ae2ce59eddb803edd393fca9",
+          "gitBlob": "0322ceec0b8f15aa2d74a6173c07cc8c6f3764b3",
+          "upstreamPath": "COPYRIGHT.md",
+          "bytes": 608,
+          "sha256": "f5c342c49f3ac804f3e8e7bb62a8040a44c50d47bb36902b1abd13f66a1adf8b"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/AUTHORS",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/8a6ce83063d90b91ae2ce59eddb803edd393fca9/AUTHORS",
+          "commit": "8a6ce83063d90b91ae2ce59eddb803edd393fca9",
+          "gitBlob": "ab3575c1f490363e4957adbc77a3783c48f4492b",
+          "upstreamPath": "AUTHORS",
+          "bytes": 664,
+          "sha256": "2748c1a1fba7616917c61d455e8d715ab952671ead63f2026ad0124410596b09"
+        }
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "unic-ucd-version",
+      "version": "0.9.0",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig exactly matches open-i18n/rust-unic@5878605364af97a3358368a6eaef02104af2e016/unic/ucd/version/Cargo.toml. The packaged .cargo_vcs_info.json pins this commit; its missing path_in_vcs was resolved by the exact manifest-byte match. These are the original repository license/attribution files at that commit.",
+      "documents": [
+        {
+          "file": "open-i18n-rust-unic/0.9.0/LICENSE-APACHE",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-APACHE",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "16fe87b06e802f094b3fbb0894b137bca2b16ef1",
+          "upstreamPath": "LICENSE-APACHE",
+          "bytes": 10847,
+          "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/LICENSE-MIT",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/LICENSE-MIT",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "31aa79387f27e730e33d871925e152e35e428031",
+          "upstreamPath": "LICENSE-MIT",
+          "bytes": 1023,
+          "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/COPYRIGHT.md",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/COPYRIGHT.md",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "0322ceec0b8f15aa2d74a6173c07cc8c6f3764b3",
+          "upstreamPath": "COPYRIGHT.md",
+          "bytes": 608,
+          "sha256": "f5c342c49f3ac804f3e8e7bb62a8040a44c50d47bb36902b1abd13f66a1adf8b"
+        },
+        {
+          "file": "open-i18n-rust-unic/0.9.0/AUTHORS",
+          "url": "https://raw.githubusercontent.com/open-i18n/rust-unic/5878605364af97a3358368a6eaef02104af2e016/AUTHORS",
+          "commit": "5878605364af97a3358368a6eaef02104af2e016",
+          "gitBlob": "ab3575c1f490363e4957adbc77a3783c48f4492b",
+          "upstreamPath": "AUTHORS",
+          "bytes": 664,
+          "sha256": "2748c1a1fba7616917c61d455e8d715ab952671ead63f2026ad0124410596b09"
+        }
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "webview2-com",
+      "version": "0.38.2",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig exactly matches wravery/webview2-rs@b74dc5e2b394044bea5191052868ce7a106c202c/crates/webview2-com/Cargo.toml. The packaged .cargo_vcs_info.json pins this commit and path crates/webview2-com. These are the original repository license/attribution files at that commit.",
+      "documents": [
+        {
+          "file": "wravery-webview2-rs/b74dc5e2b394044bea5191052868ce7a106c202c/LICENSE",
+          "url": "https://raw.githubusercontent.com/wravery/webview2-rs/b74dc5e2b394044bea5191052868ce7a106c202c/LICENSE",
+          "commit": "b74dc5e2b394044bea5191052868ce7a106c202c",
+          "gitBlob": "de9a7e660e173136b351982a34f715af424ff812",
+          "upstreamPath": "LICENSE",
+          "bytes": 1067,
+          "sha256": "0dcf41516e608bbcb6cdc5229feb7b86fe4a643b85e7df251133c93408fdac73"
+        }
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "webview2-com-macros",
+      "version": "0.8.1",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig exactly matches wravery/webview2-rs@dffa41a8a46d3f5565eefbff2de57d38d399f158/crates/callback-macros/Cargo.toml. The packaged .cargo_vcs_info.json pins this commit and path crates/callback-macros. These are the original repository license/attribution files at that commit.",
+      "documents": [
+        {
+          "file": "wravery-webview2-rs/dffa41a8a46d3f5565eefbff2de57d38d399f158/LICENSE",
+          "url": "https://raw.githubusercontent.com/wravery/webview2-rs/dffa41a8a46d3f5565eefbff2de57d38d399f158/LICENSE",
+          "commit": "dffa41a8a46d3f5565eefbff2de57d38d399f158",
+          "gitBlob": "de9a7e660e173136b351982a34f715af424ff812",
+          "upstreamPath": "LICENSE",
+          "bytes": 1067,
+          "sha256": "0dcf41516e608bbcb6cdc5229feb7b86fe4a643b85e7df251133c93408fdac73"
+        }
+      ]
+    },
+    {
+      "ecosystem": "cargo",
+      "name": "webview2-com-sys",
+      "version": "0.38.2",
+      "source": "registry+https://github.com/rust-lang/crates.io-index",
+      "basis": "Registry Cargo.toml.orig exactly matches wravery/webview2-rs@b74dc5e2b394044bea5191052868ce7a106c202c/crates/bindings/Cargo.toml. The packaged .cargo_vcs_info.json pins this commit and path crates/bindings. These are the original repository license/attribution files at that commit.",
+      "documents": [
+        {
+          "file": "wravery-webview2-rs/b74dc5e2b394044bea5191052868ce7a106c202c/LICENSE",
+          "url": "https://raw.githubusercontent.com/wravery/webview2-rs/b74dc5e2b394044bea5191052868ce7a106c202c/LICENSE",
+          "commit": "b74dc5e2b394044bea5191052868ce7a106c202c",
+          "gitBlob": "de9a7e660e173136b351982a34f715af424ff812",
+          "upstreamPath": "LICENSE",
+          "bytes": 1067,
+          "sha256": "0dcf41516e608bbcb6cdc5229feb7b86fe4a643b85e7df251133c93408fdac73"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "supplements": [
+    {
+      "ecosystem": "npm",
+      "name": "abstract-logging",
+      "version": "2.0.1",
+      "source": "package-lock.json v3; sha512-2BjRTZxTPvheOvGbBslFSYOUkr+SjPtOnrLP33f+VIWLzezQpZcqVg7ja3L4dBXmzzgwT+a029jRx5PCi3JuiA==",
+      "basis": "The exact installed Readme.md matches upstream commit 80dfaef91ee87008f4ed2b6e78921d383bccd406 and links the author's hosted MIT license. This is the unmodified official text endpoint response retrieved on 2026-09-12 KST; the hosted notice displays the current year. The copyright year is not an inferred package publication date.",
+      "documents": [
+        {
+          "file": "abstract-logging-2.0.1-LICENSE.txt",
+          "bytes": 1112,
+          "sha256": "af15a41ce02371f77476b7a201e036c0ae6c5d6d2a233b4e5f0fd5fca123457e",
+          "url": "https://jsumners.mit-license.org/license.txt"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+.desktop-mcp-panel{padding:24px;margin-bottom:28px;min-width:0}
+.desktop-mcp-panel .section-heading{flex-wrap:wrap;gap:12px}
+.desktop-mcp-note,.desktop-mcp-fields p{font-size:var(--text-small);line-height:1.8;color:var(--muted)}
+.desktop-mcp-state{display:flex;align-items:center;gap:8px;font-size:var(--text-small)}
+.desktop-mcp-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;border:0;min-width:0;padding:0;margin:24px 0}
+.desktop-mcp-fields legend{font-size:var(--text-body);font-weight:600;padding:0 0 16px}
+.desktop-mcp-fields>div{min-width:0}
+.desktop-mcp-fields label:not(.desktop-mcp-checkbox){display:block;font-size:var(--text-small);font-weight:600;margin-bottom:8px}
+.desktop-mcp-fields input:not([type=checkbox]),.desktop-mcp-fields select{width:100%;min-width:0;max-width:100%;border:1px solid var(--line);border-radius:6px;padding:10px 12px;background:#fff;color:inherit;font:inherit;font-size:var(--text-small)}
+.desktop-mcp-fields:disabled input,.desktop-mcp-fields:disabled select{background:#f2f3ee}
+.desktop-mcp-full{grid-column:1/-1}
+.desktop-mcp-checkbox{display:flex;align-items:flex-start;gap:9px;font-size:var(--text-small);line-height:1.7}
+.desktop-mcp-checkbox input{width:16px;height:16px;margin:3px 0 0;flex-shrink:0;accent-color:var(--green)}
+.desktop-mcp-checkbox small{display:block;color:var(--muted);font-size:var(--text-small)}
+.desktop-mcp-actions{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.desktop-mcp-list-title{margin:26px 0 14px;font-size:var(--text-body)}
+.desktop-mcp-grants{list-style:none;padding:0;margin:0}
+.desktop-mcp-grants>li{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:15px 0;border-top:1px solid var(--line)}
+.desktop-mcp-grant-detail{display:flex;flex-direction:column;gap:5px;min-width:0;font-size:var(--text-small);line-height:1.7;overflow-wrap:anywhere}
+.desktop-mcp-grant-detail span,.desktop-mcp-grant-detail small{color:var(--muted);font-size:var(--text-small)}
+.desktop-mcp-grants>li>.button{flex-shrink:0}
+.desktop-mcp-configuration{margin:22px 0;padding:18px;border:1px solid #dce5d0;background:#f1f5e9;border-radius:8px;min-width:0}
+.desktop-mcp-config-heading{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.desktop-mcp-config-heading h3{font-size:var(--text-body);margin:0}
+.desktop-mcp-configuration p,.desktop-mcp-configuration [role=status]{font-size:var(--text-small);line-height:1.8}
+.desktop-mcp-configuration textarea{display:block;width:100%;min-width:0;max-width:100%;resize:vertical;padding:12px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--text);font:11px/1.7 monospace;overflow-wrap:anywhere;white-space:pre-wrap;margin:13px 0}
+@media(max-width:680px){.desktop-mcp-panel{padding:18px}.desktop-mcp-fields{grid-template-columns:1fr;gap:16px}.desktop-mcp-panel .section-heading h2{font-size:16px}.desktop-mcp-panel .section-heading>.button{min-height:40px}.desktop-mcp-actions>.button{width:100%;min-height:40px}.desktop-mcp-grants>li{align-items:flex-start;flex-wrap:wrap}.desktop-mcp-grants>li>.button{min-height:40px}.desktop-mcp-configuration{padding:13px}}

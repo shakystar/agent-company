@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": false,
+    "noEmitOnError": true,
+    "rewriteRelativeImportExtensions": true,
+    "sourceMap": false,
+    "declaration": false,
+    "rootDir": ".",
+    "types": ["node"],
+    "lib": ["ES2023", "DOM"]
+  },
+  "include": ["server/desktop-entry.ts", "server/desktop-mcp-entry.ts", "server/desktop-mcp-output.ts"],
+  "exclude": ["node_modules", "desktop/builds", "dist", ".verification"]
+}
